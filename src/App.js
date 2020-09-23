@@ -77,4 +77,5 @@ class App extends React.Component {
   }
 }
 
-export default withRouter(withNamespaces()(App));
+export default App;
+withRouter(withNamespaces()(App));
