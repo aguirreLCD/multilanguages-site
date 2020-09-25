@@ -7,18 +7,15 @@ export default (props) => {
         <div>
           <h2>{t("experiencesTitle")}</h2>
           <p>{t("experiencesDescription")}</p>
+
           <ul>
             <li>
-              <h3 className="date">University of Coimbra - Portugal</h3>
-              <p className="date">
-                PhD Student - Department of Civil Engineering.
-              </p>
-
-              <p className="desc">February 2017 - present</p>
-              <p className="desc">Development of meta and smart- materials.</p>
-
+              <h3 className="date">{t("professionalExperience1.company")}</h3>
+              <p className="date">{t("professionalExperience1.title")}</p>
+              <p className="desc">{t("professionalExperience1.years")}</p>
+              <p className="desc">{t("professionalExperience1.description")}</p>
               <a
-                href="https://www.researchgate.net/publication/336344419_Acoustic_behavior_of_porous_concrete_Characterization_by_experimental_and_inversion_methods"
+                href={t("professionalExperience1.url")}
                 rel="noopener noreferrer"
                 target="_blank"
               >
@@ -27,16 +24,12 @@ export default (props) => {
             </li>
 
             <li>
-              <h3 className="date">University of Coimbra - Portugal</h3>
-              <p className="date">
-                PhD Student - Department of Civil Engineering.
-              </p>
-
-              <p className="desc">February 2017 - present</p>
-              <p className="desc">Development of meta and smart- materials.</p>
-
+              <h3 className="date">{t("professionalExperience2.company")}</h3>
+              <p className="date">{t("professionalExperience2.title")}</p>
+              <p className="desc">{t("professionalExperience2.years")}</p>
+              <p className="desc">{t("professionalExperience2.description")}</p>
               <a
-                href="https://www.researchgate.net/publication/336344419_Acoustic_behavior_of_porous_concrete_Characterization_by_experimental_and_inversion_methods"
+                href={t("professionalExperience2.url")}
                 rel="noopener noreferrer"
                 target="_blank"
               >
@@ -45,16 +38,12 @@ export default (props) => {
             </li>
 
             <li>
-              <h3 className="date">University of Coimbra - Portugal</h3>
-              <p className="date">
-                PhD Student - Department of Civil Engineering.
-              </p>
-
-              <p className="desc">February 2017 - present</p>
-              <p className="desc">Development of meta and smart- materials.</p>
-
+              <h3 className="date">{t("professionalExperience3.company")}</h3>
+              <p className="date">{t("professionalExperience3.title")}</p>
+              <p className="desc">{t("professionalExperience3.years")}</p>
+              <p className="desc">{t("professionalExperience3.description")}</p>
               <a
-                href="https://www.researchgate.net/publication/336344419_Acoustic_behavior_of_porous_concrete_Characterization_by_experimental_and_inversion_methods"
+                href={t("professionalExperience3.url")}
                 rel="noopener noreferrer"
                 target="_blank"
               >

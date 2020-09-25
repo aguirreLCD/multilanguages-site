@@ -7,12 +7,13 @@ export default (props) => {
         <div>
           <h2>{t("publicationsTitle")}</h2>
           <p>{t("publicationsDescription")}</p>
+
           <ul>
             <li>
-              <h3 className="date">Acoustic behavior of porous concrete.</h3>
-              <p className="desc">Conference: INTERNOISE 2019.</p>
+              <h3 className="date">{t("publication1.title")}</h3>
+              <p className="desc">{t("publication1.category")}</p>
               <a
-                href="https://www.researchgate.net/publication/336344419_Acoustic_behavior_of_porous_concrete_Characterization_by_experimental_and_inversion_methods"
+                href={t("publication1.url")}
                 rel="noopener noreferrer"
                 target="_blank"
               >
@@ -21,12 +22,10 @@ export default (props) => {
             </li>
 
             <li>
-              <h3 className="date">
-                Study of analytical and numerical models.
-              </h3>
-              <p className="desc">Conference: INTERNOISE 2019.</p>
+              <h3 className="date">{t("publication2.title")}</h3>
+              <p className="desc">{t("publication2.category")}</p>
               <a
-                href="https://www.researchgate.net/publication/333918419_Study_of_analytical_and_numerical_models_for_diffuse_field_sound_absorption_prediction_according_to_the_porous_panel_dimensions"
+                href={t("publication2.url")}
                 rel="noopener noreferrer"
                 target="_blank"
               >
@@ -35,10 +34,10 @@ export default (props) => {
             </li>
 
             <li>
-              <h3 className="date">Tuning Locally Resonant Structures.</h3>
-              <p className="desc">Conference: INTERNOISE 2019</p>
+              <h3 className="date">{t("publication3.title")}</h3>
+              <p className="desc">{t("publication3.category")}</p>
               <a
-                href="https://www.researchgate.net/publication/333929733_Overcoming_the_Coincidence_Effect_of_a_Single_Panel_by_Introducing_and_Tuning_Locally_Resonant_Structures"
+                href={t("publication3.url")}
                 rel="noopener noreferrer"
                 target="_blank"
               >

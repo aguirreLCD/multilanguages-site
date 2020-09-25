@@ -15,5 +15,92 @@
   "publicationsNav": "Publications",
   "experiencesNav": "Experiences",
   "experiencesTitle": "Professional Experiences",
-  "experiencesDescription": "Here are my experiences in research."
+  "experiencesDescription": "Here are my experiences in research.",
+
+  "publication1": {
+    "title": "Acoustic behavior of porous concrete.",
+    "category": "Conference: INTERNOISE 2019",
+    "image": "1.jpg",
+    "url": "https://www.researchgate.net/publication/336344419_Acoustic_behavior_of_porous_concrete_Characterization_by_experimental_and_inversion_methods"
+  },
+  "publication2": {
+    "title": "Study of analytical and numerical models.",
+    "category": "Conference: INTERNOISE 2019.",
+    "image": "2.jpg",
+    "url": "https://www.researchgate.net/publication/333918419_Study_of_analytical_and_numerical_models_for_diffuse_field_sound_absorption_prediction_according_to_the_porous_panel_dimensions"
+  },
+  "publication3": {
+    "title": "Tuning Locally Resonant Structures.",
+    "category": "Conference: INTERNOISE 2019",
+    "image": "3.jpg",
+    "url": "https://www.researchgate.net/publication/333929733_Overcoming_the_Coincidence_Effect_of_a_Single_Panel_by_Introducing_and_Tuning_Locally_Resonant_Structures"
+  },
+
+  "professionalExperience1": {
+    "company": "University of Coimbra - Portugal.",
+    "title": "PhD Student - Department of Civil Engineering.",
+    "years": "February 2017 - present",
+    "description": "Development of meta & smart- materials.",
+    "url": "https://www.researchgate.net/publication/336344419_Acoustic_behavior_of_porous_concrete_Characterization_by_experimental_and_inversion_methods"
+  },
+  "professionalExperience2": {
+    "company": "University of Coimbra - Portugal.",
+    "title": "PhD Student - Department of Civil Engineering.",
+    "years": "October 2016 - February 2017",
+    "description": "PhD Student.",
+    "url": "https://www.researchgate.net/publication/336344419_Acoustic_behavior_of_porous_concrete_Characterization_by_experimental_and_inversion_methods"
+  },
+  "professionalExperience3": {
+    "company": "University of Santa Maria - UFSM - Brazil.",
+    "title": "Department of Structures and Construction (DECC)",
+    "years": "January 2013 - February 2016",
+    "description": "Researcher.",
+    "url": "https://www.researchgate.net/publication/336344419_Acoustic_behavior_of_porous_concrete_Characterization_by_experimental_and_inversion_methods"
+  },
+
+  "interests": [
+    {
+      "name": "Acoustic Signal Processing",
+      "level": "90%"
+    },
+    {
+      "name": "Noise Control",
+      "level": "80%"
+    },
+    {
+      "name": "Porous Materials",
+      "level": "100%"
+    },
+    {
+      "name": "Acoustic Impedance Tests",
+      "level": "90%"
+    },
+    {
+      "name": "Waves",
+      "level": "80%"
+    },
+    {
+      "name": "Wave Propagation",
+      "level": "100%"
+    },
+    {
+      "name": "Acoustic Stimulation",
+      "level": "20%"
+    }
+  ],
+
+  "education": [
+    {
+      "school": "University of Coimbra - Portugal.",
+      "degree": "PhD",
+      "graduated": "Month / Year",
+      "description": "Describe your experience at school, what you learned, what useful skills you have acquired etc."
+    },
+    {
+      "school": "University of Santa Maria - UFSM - Brazil.",
+      "degree": "Acoustical Engineer",
+      "graduated": "Month / Year",
+      "description": "Describe your experience at school, what you learned, what useful skills you have acquired etc."
+    }
+  ]
 }

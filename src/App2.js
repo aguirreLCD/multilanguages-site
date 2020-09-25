@@ -69,9 +69,9 @@ class App extends React.Component {
               </Switch>
             </CSSTransition>
           </TransitionGroup>
-
-          <StaticContent t={t} />
         </main>
+
+        <StaticContent t={t} />
       </div>
     );
   }

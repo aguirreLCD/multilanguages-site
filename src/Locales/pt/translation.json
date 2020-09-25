@@ -7,13 +7,54 @@
   "bioTitle": "Mais sobre mim",
   "bioDescription": "¡Es hora de presentarlo correctamente! Bienvenidos a todos, mi nombre es Matheus, nací en Brasil hace 26 años, actualmente vivo en Portugal desde hace 6 años./n Interesado en <strong>Intereses.</strong>",
   "publicationsTitle": "Publicações",
-  "publicationsDescription": "Algumas publicações.",
+  "publicationsDescription": "Aqui estão minhas Publicações.",
   "footerQuestion": "Alguma pergunta?",
   "footerEmail": "Me envia um email!",
   "homeNav": "Home",
   "bioNav": "Sobre",
   "publicationsNav": "Publicações",
   "experiencesNav": "Experiências",
-  "experiencesTitle": "Minhas Experiências Profissionais",
-  "experiencesDescription": "Aqui estão minhas Experiências Profissionais"
+  "experiencesTitle": "Experiências Profissionais",
+  "experiencesDescription": "Aqui estão minhas Experiências Profissionais em Pesquisa.",
+
+  "publication1": {
+    "title": "Acoustic behavior of porous concrete.",
+    "category": "Conference: INTERNOISE 2019",
+    "image": "1.jpg",
+    "url": "https://www.researchgate.net/publication/336344419_Acoustic_behavior_of_porous_concrete_Characterization_by_experimental_and_inversion_methods"
+  },
+  "publication2": {
+    "title": "Study of analytical and numerical models.",
+    "category": "Conference: INTERNOISE 2019.",
+    "image": "2.jpg",
+    "url": "https://www.researchgate.net/publication/333918419_Study_of_analytical_and_numerical_models_for_diffuse_field_sound_absorption_prediction_according_to_the_porous_panel_dimensions"
+  },
+  "publication3": {
+    "title": "Tuning Locally Resonant Structures.",
+    "category": "Conference: INTERNOISE 2019",
+    "image": "3.jpg",
+    "url": "https://www.researchgate.net/publication/333929733_Overcoming_the_Coincidence_Effect_of_a_Single_Panel_by_Introducing_and_Tuning_Locally_Resonant_Structures"
+  },
+
+  "professionalExperience1": {
+    "company": "University of Coimbra - Portugal.",
+    "title": "PhD Student - Department of Civil Engineering.",
+    "years": "February 2017 - present",
+    "description": "Development of meta & smart- materials.",
+    "url": "https://www.researchgate.net/publication/336344419_Acoustic_behavior_of_porous_concrete_Characterization_by_experimental_and_inversion_methods"
+  },
+  "professionalExperience2": {
+    "company": "University of Coimbra - Portugal.",
+    "title": "PhD Student - Department of Civil Engineering.",
+    "years": "October 2016 - February 2017",
+    "description": "PhD Student.",
+    "url": "https://www.researchgate.net/publication/336344419_Acoustic_behavior_of_porous_concrete_Characterization_by_experimental_and_inversion_methods"
+  },
+  "professionalExperience3": {
+    "company": "University of Santa Maria - UFSM - Brazil.",
+    "title": "Department of Structures and Construction (DECC)",
+    "years": "January 2013 - February 2016",
+    "description": "Researcher.",
+    "url": "https://www.researchgate.net/publication/336344419_Acoustic_behavior_of_porous_concrete_Characterization_by_experimental_and_inversion_methods"
+  }
 }
