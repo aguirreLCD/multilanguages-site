@@ -50,6 +50,34 @@ export default (props) => {
                 Read More
               </a>
             </li>
+
+            <li>
+              <h3 className="date">{t("professionalExperience4.company")}</h3>
+              <p className="date">{t("professionalExperience4.title")}</p>
+              <p className="desc">{t("professionalExperience4.years")}</p>
+              <p className="desc">{t("professionalExperience4.description")}</p>
+              <a
+                href={t("professionalExperience4.url")}
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                Read More
+              </a>
+            </li>
+
+            <li>
+              <h3 className="date">{t("professionalExperience5.company")}</h3>
+              <p className="date">{t("professionalExperience5.title")}</p>
+              <p className="desc">{t("professionalExperience5.years")}</p>
+              <p className="desc">{t("professionalExperience5.description")}</p>
+              <a
+                href={t("professionalExperience5.url")}
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                Read More
+              </a>
+            </li>
           </ul>
         </div>
       </section>

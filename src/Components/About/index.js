@@ -13,6 +13,13 @@ export default (props) => {
               .map((text, i) => (
                 <p dangerouslySetInnerHTML={{ __html: text }} key={i}></p>
               ))}
+            <p>
+              {t("bioDescriptionMore")
+                .split("/n")
+                .map((text, i) => (
+                  <p dangerouslySetInnerHTML={{ __html: text }} key={i}></p>
+                ))}
+            </p>
 
             <a
               className="btn btn-primary"

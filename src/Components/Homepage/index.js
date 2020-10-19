@@ -8,13 +8,8 @@ export default (props) => {
       <section id="home">
         <h2>{t("homeTitle")}</h2>
         <h3>{t("homeDescription")}</h3>
-        <p
-          dangerouslySetInnerHTML={{
-            __html: t("homeFreelance", {
-              interpolation: { escapeValue: true },
-            }),
-          }}
-        ></p>
+        <p>{t("homeFreelance")}</p>
+
         <div>
           <Link to="/bio" className="btn btn-primary">
             {t("buttonBio")}

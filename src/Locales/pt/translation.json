@@ -1,11 +1,12 @@
 {
-  "homeTitle": "Olá! Eu sou Matheus Pereira!",
-  "homeDescription": "Engenheiro Acústico.",
-  "homeFreelance": "",
+  "homeTitle": "Matheus Pereira,",
+  "homeDescription": "Engenheiro Acústico",
+  "homeFreelance": "Formado pela Universidade Federal de Santa Maria – Brasil (UFSM) e PhD em Engenharia Civil pela Universidade de Coimbra – Portugal (UC). Atualmente trabalho como investigador doutorado no projeto NVTrail na Faculdade de Engenharia da Universidade do Porto (FEUP).",
   "buttonBio": "Sobre mim",
   "buttonPublications": "Minhas publicações",
   "bioTitle": "Mais sobre mim",
-  "bioDescription": "¡Es hora de presentarlo correctamente! Bienvenidos a todos, mi nombre es Matheus, nací en Brasil hace 26 años, actualmente vivo en Portugal desde hace 6 años./n Interesado en <strong>Intereses.</strong>",
+  "bioDescription": "Tenho 28 anos, sou natural de Santa Rosa – RS, e vivo em Portugal desde 2016. Dei inicio a minha carreira de investigador como bolsista de iniciação científica no Grupo de Pesquisa em Acústica e Vibrações (GPAV) da UFSM no projeto “Caracterização experimental e numérica de novos materiais de absorção sonora”./n Em 2016 realizei o estágio de conclusão de graduação na empresa dBwave.i – Acoustica e Vibrações com sede em Lisboa./n",
+  "bioDescriptionMore": "Ainda no segundo semestre de 2016 logo após a formatura em Engenharia Acústica dei inicio ao meu doutoramento em Engenharia Civil na Universidade de Coimbra, qual a tese intitulada “Estudo da absorção sonora de materiais granulares e sistemas híbridos com estruturas ressonantes” que foi concluída e aprovada com Distinção e Louvor no dia 31/07/2020./n Durante o doutoramento fui bolsista de investigação do Institute for Sustainability and Innovation in Structural Engineering (ISISE) no projeto Desenvolvimento de meta & smart-materials./n Participei por duas vezes ao longo do doutoramento de missões científicas de curta duração financiadas pela Cost European Cooperation in Science & Technology no âmbito do projeto Designs for Noise Reducing Materials and Structures (DENORMS), ambas realizadas na Universidade de Alicante, Espanha,  e intituladas respectivamente “Experimental evaluation and incorporation in equivalent fluid models of macroscopic parameters characterizing granular materials for noise control” e “Metaporous Concrete”.",  
   "publicationsTitle": "Publicações",
   "publicationsDescription": "Aqui estão minhas Publicações.",
   "footerQuestion": "Alguma pergunta?",
@@ -36,25 +37,43 @@
     "url": "https://www.researchgate.net/publication/333929733_Overcoming_the_Coincidence_Effect_of_a_Single_Panel_by_Introducing_and_Tuning_Locally_Resonant_Structures"
   },
 
+
   "professionalExperience1": {
-    "company": "University of Coimbra - Portugal.",
-    "title": "PhD Student - Department of Civil Engineering.",
-    "years": "February 2017 - present",
-    "description": "Development of meta & smart- materials.",
-    "url": "https://www.researchgate.net/publication/336344419_Acoustic_behavior_of_porous_concrete_Characterization_by_experimental_and_inversion_methods"
+    "company": "Faculdade de Engenharia da Universidade do Porto (FEUP) - PT",
+    "title": "Investigador Doutor",
+    "years": "Outubro 2020 - atual",
+    "description": "Investigador doutorado no projeto NVTrail - Ruído e vibrações induzidas por tráfego ferroviário em túneis.",
+    "url": ""
   },
   "professionalExperience2": {
-    "company": "University of Coimbra - Portugal.",
-    "title": "PhD Student - Department of Civil Engineering.",
-    "years": "October 2016 - February 2017",
-    "description": "PhD Student.",
-    "url": "https://www.researchgate.net/publication/336344419_Acoustic_behavior_of_porous_concrete_Characterization_by_experimental_and_inversion_methods"
+    "company": "Universidade de Coimbra (UC) - PT",
+    "title": "Doutoramento em Engenharia Civil",
+    "years": "2016 - 2020",
+    "description": "Tese intitulada “Estudo da absorção sonora de materiais granulares e sistemas híbridos com estruturas ressonantes” aprovada com Distinção e Louvor.",
+    "url": ""
   },
+
   "professionalExperience3": {
-    "company": "University of Santa Maria - UFSM - Brazil.",
-    "title": "Department of Structures and Construction (DECC)",
-    "years": "January 2013 - February 2016",
-    "description": "Researcher.",
-    "url": "https://www.researchgate.net/publication/336344419_Acoustic_behavior_of_porous_concrete_Characterization_by_experimental_and_inversion_methods"
+    "company": "Universidade de Alicante - ES",
+    "title": "Short Term Scientific Mission (STSM) DENORMS",
+    "years": "2016 - 2020",
+    "description": "Missões científicas no âmbito do projeto DENORMS nos seguintes temas: “Experimental evaluation and incorporation in equivalent fluid models of macroscopic parameters characterizing granular materials for noise control” and “Metaporous Concrete”.",
+    "url": "https://denorms.eu/stsm/successful-stsm/"
+  },
+
+  "professionalExperience4": {
+    "company": "Institute for Sustainability and Innovation in Structural Engineering (ISISE) - PT",
+    "title": "Bolsista",
+    "years": "2016 - 2020",
+    "description": "Bolsista de investigação no projeto “Desenvolvimento de Meta & Smart Materials”",
+    "url": "https://www.isise.net"
+  },
+
+  "professionalExperience5": {
+    "company": "Universidade Federal de Santa Maria (UFSM) - BR",
+    "title": "Graduação em Engenharia Acústica",
+    "years": "2010 - 2016",
+    "description": "Trabalho de Conclusão de Curso intitulado “Caracterização de materiais de absorção para aumento de desempenho da atenuação acústica de câmaras de expansão”.",
+    "url": ""
   }
 }
