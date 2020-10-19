@@ -7,19 +7,18 @@ export default (props) => {
       <section id="about">
         <div>
           <div>
-            <h2>{t("bioTitle")}</h2>
+            {/* <h2>{t("bioTitle")}</h2> */}
             {t("bioDescription")
               .split("/n")
               .map((text, i) => (
                 <p dangerouslySetInnerHTML={{ __html: text }} key={i}></p>
               ))}
-            <p>
-              {t("bioDescriptionMore")
-                .split("/n")
-                .map((text, i) => (
-                  <p dangerouslySetInnerHTML={{ __html: text }} key={i}></p>
-                ))}
-            </p>
+
+            {t("bioDescriptionMore")
+              .split("/n")
+              .map((text, i) => (
+                <p dangerouslySetInnerHTML={{ __html: text }} key={i}></p>
+              ))}
 
             <a
               className="btn btn-primary"
