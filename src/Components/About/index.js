@@ -9,7 +9,7 @@ export default (props) => {
           <div>
             {/* <h3>Matheus Pereira</h3> */}
 
-            <h2>{t("bioTitle")}</h2>
+            {/* <h2>{t("bioTitle")}</h2> */}
             {t("bioDescription")
               .split("/n")
               .map((text, i) => (

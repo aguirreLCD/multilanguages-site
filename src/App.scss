@@ -22,15 +22,16 @@ $media-types: (
 //VARIABLES
 $link-color: rgb(255, 2, 2);
 $bg-color: #37343f;
+
 //CUSTOM SCROLLBAR
 ::-webkit-scrollbar {
-  width: 10px;
+  width: 8px;
 }
 ::-webkit-scrollbar-track {
   background: lighten($link-color, 50%);
 }
 ::-webkit-scrollbar-thumb {
-  background: $link-color;
+  background: rgb(194, 193, 193);
 }
 ::-webkit-scrollbar-thumb:hover {
   background: darken($link-color, 10%);
@@ -133,8 +134,8 @@ a.btn {
     background: lighten($link-color, 95%);
     color: $link-color;
     &:hover {
-      color: $link-color;
-      background-color: darken($link-color, 45%);
+      color: #fff;
+      background-color: darken($bg-color, 15%);
     }
   }
   &.btn-secondary {
@@ -170,7 +171,7 @@ header {
   right: 0;
   padding: 0 3rem;
   display: flex;
-  font-size: 0.9rem;
+  font-size: 1rem;
 
   @include responsive(tablet-portrait) {
     flex-direction: column;
@@ -312,7 +313,7 @@ header {
         flex-direction: column;
         position: absolute;
         top: 100%;
-        background-color: rgba(#000, 0.5);
+        background-color: rgba(#000, 0.3);
         border-radius: 1em;
         opacity: 0;
         transition: all 0.5s ease;
@@ -355,6 +356,18 @@ header {
             //   position: static;
             // }
           }
+
+          @include responsive(phone) {
+            // z-index: -10000;
+            position: relative;
+            // align-items: stretch;
+            // justify-content: center;
+            flex-direction: row;
+            // align-self: center;
+            // align-content: center;
+            margin: 0.1rem;
+            padding: 0.2rem;
+          }
         }
       }
 
@@ -362,6 +375,18 @@ header {
         div.flags {
           opacity: 1;
           // align-self: center;
+
+          // @include responsive(phone) {
+          //   z-index: -10000;
+          //   position: static;
+          //   // align-items: stretch;
+          //   // justify-content: center;
+          //   flex-direction: row;
+          //   // align-self: center;
+          //   // align-content: center;
+          //   margin: 0;
+          //   padding: 0;
+          // }
         }
 
         // @include responsive(tablet-portrait) {
@@ -398,8 +423,21 @@ header {
         top: 50%;
         margin: 0 2em;
         cursor: pointer;
-        animation: leftRight 1s ease-in infinite alternate;
+        animation: leftRight 2s ease-in infinite alternate;
         color: #fff;
+
+        @include responsive(phone) {
+          // z-index: -10000;
+          position: static;
+          // align-items: stretch;
+          // justify-content: center;
+          // flex-direction: row;
+          // align-self: center;
+          // align-content: center;
+          // margin: 0 1em;
+          // padding: 0;
+          // left: 50%;
+        }
         // align-self: center;
 
         // @include responsive(tablet-portrait) {
@@ -419,7 +457,7 @@ header {
       }
       @include responsive(phone) {
         z-index: -10000;
-        position: static;
+        // position: static;
         // align-self: center;
         margin-left: 2rem;
         padding: 0;
@@ -427,15 +465,16 @@ header {
         // align-items: center;
         // align-content: center;
       }
-    }
-    @include responsive(tablet-portrait) {
-      position: static;
+      @include responsive(tablet-portrait) {
+        x-index: -1;
+        position: static;
+      }
     }
   }
 }
 
 main {
-  min-height: 90vh;
+  min-height: 100vh;
   width: 100%;
   position: relative;
   padding-top: 1vh;
@@ -458,10 +497,11 @@ main {
     @include responsive(phone) {
       z-index: -10000;
       position: static;
-      padding: 1rem;
+      padding: 0.5rem;
 
       // min-height: 100vh;
     }
+
     &[class^="fade"] {
       &[class$="enter"],
       &[class$="appear"] {
@@ -662,16 +702,19 @@ main {
           p {
             // z-index: -10000;
             padding: 0;
+            margin: 0.2rem 0.8rem;
             text-align: left;
           }
           figure {
             grid-row: 1;
-            margin-bottom: 2rem;
+            // margin-bottom: 2rem;
+            margin: 0;
+            padding: 0;
             img {
               display: block;
               margin: 0 auto;
               width: 70%;
-              height: 300px;
+              height: 270px;
               object-position: top;
             }
           }
@@ -699,21 +742,24 @@ main {
 }
 
 footer {
-  background: #fff;
+  background: rgb(194, 193, 193);
   position: fixed;
   bottom: 0;
   top: 90vh;
   left: 0;
   right: 0;
   display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 1rem 3rem;
+  // align-items: center;
+  justify-content: space-around;
+  // align-content: space-between;
+  padding: 0.5rem 1rem;
   color: $bg-color;
-  text-transform: uppercase;
-  font-size: 0.8rem;
-  animation: slideUp 0.5s ease-in;
-  transform-origin: bottom center;
+  // text-transform: uppercase;
+  font-size: 2rem;
+  // animation: slideUp 0.5s ease-in;
+  // transform-origin: bottom center;
+
+  // z-index: 100;
 
   a {
     color: $link-color;
@@ -756,9 +802,13 @@ footer {
   }
   @include responsive(tablet-portrait) {
     position: static;
-    padding: 1rem;
-    flex-direction: column;
-    font-size: 0.7rem;
+    // padding: 1rem;
+    // flex-direction: column;
+    // font-size: 0.7rem;
+
+    display: flex;
+    justify-content: space-around;
+    font-size: 1.5rem;
     ul {
       margin-bottom: 1rem;
     }
@@ -767,18 +817,25 @@ footer {
   @include responsive(phone) {
     // z-index: ;
     position: static;
+    padding: 0.3rem;
     // bottom: 0;
     // top: 0;
     // left: 0;
     // right: 0;
-    padding: 0.5rem;
-    flex-direction: column;
-    font-size: 0.7rem;
+    // padding: 0.5rem;
+    // flex-direction: column;
+    display: flex;
+    justify-content: space-around;
+    font-size: 1.5rem;
     ul {
       z-index: initial;
-      margin-bottom: 0.8rem;
-      padding: 0.5rem;
+      // margin-bottom: 0.8rem;
+      // padding: 0.5rem;
       position: static;
+      // z-index: -10000;
+      // align-self: center;
+      // display: flex;
+      // justify-content: space-between;
     }
   }
 }
