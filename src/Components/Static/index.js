@@ -1,7 +1,7 @@
 import React, { Fragment } from "react";
 
 export default (props) => {
-  const { t } = props;
+  // const { t } = props;
   return (
     <Fragment>
       <footer>
