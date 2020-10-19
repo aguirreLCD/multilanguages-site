@@ -189,7 +189,7 @@ header {
   @include responsive(phone) {
     z-index: initial;
     flex-direction: column;
-    // position: static;
+    position: static;
     padding: 2rem;
     font-size: 0.8rem;
     nav {
