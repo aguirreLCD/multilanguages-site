@@ -6,9 +6,9 @@
   "buttonPublications": "Mis publicaciones",
   "bioTitle": "",
   "bioDescription": "Tengo 28 años, soy de Santa Rosa - RS y vivo en Portugal desde 2016. Comencé mi carrera investigadora como becario de iniciación científica en el Grupo de Investigación en Acústica y Vibraciones (GPAV) de la UFSM en el proyecto “Caracterización experimental y de nuevos materiales fonoabsorbentes”./n En 2016, completé las prácticas de pregrado en dBwave.i - Acoustica e Vib Vibrations, con sede en Lisboa.",
-  "bioDescriptionMore": "Aún en el segundo semestre de 2016, justo después de graduarme en Ingeniería Acústica, comencé mi doctorado en Ingeniería Civil en la Universidad de Coimbra, que es la tesis titulada “Estudio de la absorción acústica de materiales granulares y sistemas híbridos con estructuras resonantes” que se completó y aprobó con Distinción y Alabanza el 31/07/2020./n Durante mi doctorado, fui investigador en el Instituto de Sostenibilidad e Innovación en Ingeniería Estructural (ISISE) en el proyecto Desarrollo de meta y materiales inteligentes./n Participé dos veces durante el doctorado de misiones científicas de corta duración financiadas por Cost European Cooperation in Science & Technology en el marco del proyecto Designs for Noise Reducing Materials and Structures (DENORMS), ambos llevados a cabo en la Universidad de Alicante, España, y titulados respectivamente “ Evaluación experimental e incorporación en modelos de fluidos equivalentes de parámetros macroscópicos que caracterizan materiales granulares para control de ruido ”y“ Hormigón Metaporoso ”./n",  
+  "bioDescriptionMore": "Aún en el segundo semestre de 2016, justo después de graduarme en Ingeniería Acústica, comencé mi doctorado en Ingeniería Civil en la Universidad de Coimbra, que es la tesis titulada “Estudio de la absorción acústica de materiales granulares y sistemas híbridos con estructuras resonantes” que se completó y aprobó con Distinción y Alabanza el 31/07/2020./n Durante mi doctorado, fui investigador en el Instituto de Sostenibilidad e Innovación en Ingeniería Estructural (ISISE) en el proyecto Desarrollo de meta y materiales inteligentes./n Participé dos veces durante el doctorado de misiones científicas de corta duración financiadas por Cost European Cooperation in Science & Technology en el marco del proyecto Designs for Noise Reducing Materials and Structures (DENORMS), ambos llevados a cabo en la Universidad de Alicante, España, y titulados respectivamente “Evaluación experimental e incorporación en modelos de fluidos equivalentes de parámetros macroscópicos que caracterizan materiales granulares para control de ruido y “Hormigón Metaporoso”./n",  
   "publicationsTitle": "Publicaciones",
-  "publicationsDescription": "Publicaciones.",
+  "publicationsDescription": "",
   "footerQuestion": "",
   "footerEmail": "Email",
   "homeNav": "Home",
@@ -16,7 +16,7 @@
   "publicationsNav": "Publicaciones",
   "experiencesNav": "Experiencias",
   "experiencesTitle": "Experiencias Professionales",
-  "experiencesDescription": "Experiencias de Investigación. ",
+  "experiencesDescription": "",
 
   "publication1": {
     "title": "Acoustic behavior of porous concrete.",

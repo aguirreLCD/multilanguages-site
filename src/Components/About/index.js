@@ -7,6 +7,8 @@ export default (props) => {
       <section id="about">
         <div>
           <div>
+            {/* <h3>Matheus Pereira</h3> */}
+
             <h2>{t("bioTitle")}</h2>
             {t("bioDescription")
               .split("/n")
