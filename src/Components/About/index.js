@@ -7,7 +7,7 @@ export default (props) => {
       <section id="about">
         <div>
           <div>
-            {/* <h2>{t("bioTitle")}</h2> */}
+            <h2>{t("bioTitle")}</h2>
             {t("bioDescription")
               .split("/n")
               .map((text, i) => (

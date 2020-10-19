@@ -5,8 +5,8 @@ export default (props) => {
   const lang = window.location.pathname.split("/")[1];
   let flags = [
     { code: "en", label: "English", img: "/assets/flags/uk.svg" },
-    { code: "es", label: "Spain", img: "/assets/flags/spain.svg" },
-    { code: "pt", label: "Portuguese", img: "/assets/flags/brazil.svg" },
+    { code: "es", label: "Español", img: "/assets/flags/spain.svg" },
+    { code: "pt", label: "Português", img: "/assets/flags/brazil.svg" },
   ];
   const active = flags.find((flag) => flag["code"] === lang);
   const index = flags.indexOf(active);

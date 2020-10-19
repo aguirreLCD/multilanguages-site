@@ -1,13 +1,14 @@
 {
-  "homeTitle": "Hi, I'm Matheus Pereira.",
+  "homeTitle": "Matheus Pereira",
   "homeDescription": "Acoustical Engineer",
-  "homeFreelance": "",
-  "buttonBio": "About me",
+  "homeFreelance": "Graduated from the Federal University of Santa Maria - Brazil (UFSM)./n PhD in Civil Engineering from the University of Coimbra - Portugal (UC)./n Currently works as a doctoral researcher in the NVTrail project at the Faculty of Engineering of the University of Porto (FEUP).",
+  "buttonBio": "About",
   "buttonPublications": "Publications",
-  "bioTitle": "About me",
-  "bioDescription": "Time to introduce properly! Welcome everyone, my name is Matheus, born in Brazil 28 years ago, currently living in Portugal since 6 years./n Interested in.... I enjoy things things things... I had experience with things things.../n My main interests areas includes: <strong>Interests.</strong>",
+  "bioTitle": "",
+  "bioDescription": "I'm 28 years old, I'm from Santa Rosa - RS, and I've lived in Portugal since 2016./n I started my research career as a scientific initiation scholarship holder at the Research Group on Acoustics and Vibrations (GPAV) at UFSM in the project “Experimental characterization and of new sound-absorbing materials”./n In 2016, I completed the undergraduate internship at dBwave.i - Acoustica e Vib Vibrations, based in Lisbon.",
+  "bioDescriptionMore": "Still in the second semester of 2016, right after graduating in Acoustic Engineering, I started my PhD in Civil Engineering at the University of Coimbra, which is the thesis entitled “Study of the sound absorption of granular materials and hybrid systems with resonant structures” that was completed and approved with Distinction and Praise on 07/31/2020./n During my PhD, I was a research fellow at the Institute for Sustainability and Innovation in Structural Engineering (ISISE) in the project Development of meta & smart-materials./n I participated twice during the doctorate of short-term scientific missions financed by Cost European Cooperation in Science & Technology under the project Designs for Noise Reducing Materials and Structures (DENORMS), both carried out at the University of Alicante, Spain, and entitled respectively “Experimental evaluation and incorporation in equivalent fluid models of macroscopic parameters characterizing granular materials for noise control” and “Metaporous Concrete”.",  
   "publicationsTitle": "Publications",
-  "publicationsDescription": "",
+  "publicationsDescription": "Publications.",
   "footerQuestion": "",
   "footerEmail": "Email",
   "homeNav": "Home",
@@ -15,7 +16,7 @@
   "publicationsNav": "Publications",
   "experiencesNav": "Experiences",
   "experiencesTitle": "Professional Experiences",
-  "experiencesDescription": "Experiences in research.",
+  "experiencesDescription": "Professional Experiences in Research.",
 
   "publication1": {
     "title": "Acoustic behavior of porous concrete.",
@@ -37,26 +38,45 @@
   },
 
   "professionalExperience1": {
-    "company": "University of Coimbra - Portugal.",
-    "title": "PhD Student - Department of Civil Engineering.",
-    "years": "February 2017 - present",
-    "description": "Development of meta & smart- materials.",
-    "url": "https://www.researchgate.net/publication/336344419_Acoustic_behavior_of_porous_concrete_Characterization_by_experimental_and_inversion_methods"
+    "company": "Faculty of Engineering of the University of Porto (FEUP) - PT",
+    "title": "Doctoral researcher",
+    "years": "October 2020 - actual",
+    "description": "Doctoral researcher in the NVTrail project NVTrail - Rail traffic noise and vibrations in tunnels.",
+    "url": ""
   },
+
   "professionalExperience2": {
-    "company": "University of Coimbra - Portugal.",
-    "title": "PhD Student - Department of Civil Engineering.",
-    "years": "October 2016 - February 2017",
-    "description": "PhD Student.",
-    "url": "https://www.researchgate.net/publication/336344419_Acoustic_behavior_of_porous_concrete_Characterization_by_experimental_and_inversion_methods"
+    "company": "University of Coimbra (UC) - PT",
+    "title": "PhD in Civil Engineering",
+    "years": "2016 - 2020",
+    "description": "Thesis entitled “Study of sound absorption of granular materials and hybrid systems with resonant structures” approved with Distinction and Praise.",
+    "url": ""
   },
+
   "professionalExperience3": {
-    "company": "University of Santa Maria - UFSM - Brazil.",
-    "title": "Department of Structures and Construction (DECC)",
-    "years": "January 2013 - February 2016",
-    "description": "Researcher.",
-    "url": "https://www.researchgate.net/publication/336344419_Acoustic_behavior_of_porous_concrete_Characterization_by_experimental_and_inversion_methods"
+    "company": "University of Alicante - ES",
+    "title": "Short Term Scientific Mission (STSM) DENORMS",
+    "years": "2016 - 2020",
+    "description": "Scientific missions within the scope of the DENORMS project on the following themes: “Experimental evaluation and incorporation in equivalent fluid models of macroscopic parameters characterizing granular materials for noise control” and “Metaporous Concrete”.",
+    "url": "https://denorms.eu/stsm/successful-stsm/"
   },
+
+  "professionalExperience4": {
+    "company": "Institute for Sustainability and Innovation in Structural Engineering (ISISE) - PT",
+    "title": "Scholarship",
+    "years": "2016 - 2020",
+    "description": "Research fellow in the project “Development of Meta & Smart Materials”.",
+    "url": "https://www.isise.net"
+  },
+
+  "professionalExperience5": {
+    "company": "Federal University of Santa Maria (UFSM) - BR",
+    "title": "Graduation in Acoustic Engineering",
+    "years": "2010 - 2016",
+    "description": "Course Conclusion paper entitled “Characterization of absorption materials to increase the performance of acoustic attenuation in expansion chambers”.",
+    "url": ""
+  },
+
 
   "interests": [
     {
@@ -103,4 +123,5 @@
       "description": "Describe your experience at school, what you learned, what useful skills you have acquired etc."
     }
   ]
+
 }

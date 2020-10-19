@@ -1,21 +1,22 @@
 {
-  "homeTitle": "Hola! Yo soy Matheus Pereira!",
-  "homeDescription": "Ingeniero Acúsctico.",
-  "homeFreelance": "",
-  "buttonBio": "Sobre mí",
-  "buttonPublications": "Mis Publicaciones",
-  "bioTitle": "Más sobre mi",
-  "bioDescription": "¡Es hora de presentarlo correctamente! Bienvenidos a todos, mi nombre es Matheus, nací en Brasil hace 26 años, actualmente vivo en Portugal desde hace 6 años./n Interesado en <strong>Intereses.</strong>",
-  "publicationsTitle": "Mis Publicaciones",
-  "publicationsDescription": "",
+  "homeTitle": "Matheus Pereira",
+  "homeDescription": "Ingeniero Acústico",
+  "homeFreelance": "Egresado de la Universidad Federal de Santa María - Brasil (UFSM)./n PhD en Ingeniería Civil por la Universidad de Coimbra - Portugal (UC)./n Actualmente trabaja como investigadora de doctorado en el proyecto NVTrail en la Facultad de Ingeniería de la Universidad de Porto (FEUP).",
+  "buttonBio": "Sobre",
+  "buttonPublications": "Mis publicaciones",
+  "bioTitle": "",
+  "bioDescription": "Tengo 28 años, soy de Santa Rosa - RS y vivo en Portugal desde 2016. Comencé mi carrera investigadora como becario de iniciación científica en el Grupo de Investigación en Acústica y Vibraciones (GPAV) de la UFSM en el proyecto “Caracterización experimental y de nuevos materiales fonoabsorbentes”./n En 2016, completé las prácticas de pregrado en dBwave.i - Acoustica e Vib Vibrations, con sede en Lisboa.",
+  "bioDescriptionMore": "Aún en el segundo semestre de 2016, justo después de graduarme en Ingeniería Acústica, comencé mi doctorado en Ingeniería Civil en la Universidad de Coimbra, que es la tesis titulada “Estudio de la absorción acústica de materiales granulares y sistemas híbridos con estructuras resonantes” que se completó y aprobó con Distinción y Alabanza el 31/07/2020./n Durante mi doctorado, fui investigador en el Instituto de Sostenibilidad e Innovación en Ingeniería Estructural (ISISE) en el proyecto Desarrollo de meta y materiales inteligentes./n Participé dos veces durante el doctorado de misiones científicas de corta duración financiadas por Cost European Cooperation in Science & Technology en el marco del proyecto Designs for Noise Reducing Materials and Structures (DENORMS), ambos llevados a cabo en la Universidad de Alicante, España, y titulados respectivamente “ Evaluación experimental e incorporación en modelos de fluidos equivalentes de parámetros macroscópicos que caracterizan materiales granulares para control de ruido ”y“ Hormigón Metaporoso ”./n",  
+  "publicationsTitle": "Publicaciones",
+  "publicationsDescription": "Publicaciones.",
   "footerQuestion": "",
   "footerEmail": "Email",
   "homeNav": "Home",
-  "bioNav": "Sobre mi",
+  "bioNav": "Sobre",
   "publicationsNav": "Publicaciones",
   "experiencesNav": "Experiencias",
-  "experiencesTitle": "Experiencias Profesionales",
-  "experiencesDescription": "Experiencias en investigación.",
+  "experiencesTitle": "Experiencias Professionales",
+  "experiencesDescription": "Experiencias de Investigación. ",
 
   "publication1": {
     "title": "Acoustic behavior of porous concrete.",
@@ -37,24 +38,41 @@
   },
 
   "professionalExperience1": {
-    "company": "University of Coimbra - Portugal.",
-    "title": "PhD Student - Department of Civil Engineering.",
-    "years": "February 2017 - present",
-    "description": "Development of meta & smart- materials.",
-    "url": "https://www.researchgate.net/publication/336344419_Acoustic_behavior_of_porous_concrete_Characterization_by_experimental_and_inversion_methods"
+    "company": "Facultad de Ingeniería de la Universidad de Porto  (FEUP) - PT",
+    "title": "Investigador de doctorado",
+    "years": "Octubre 2020 - Actual",
+    "description": "Investigador de doctorado en el proyecto NVTrail - Ruido del tráfico ferroviario y vibraciones en túneles.",
+    "url": ""
   },
   "professionalExperience2": {
-    "company": "University of Coimbra - Portugal.",
-    "title": "PhD Student - Department of Civil Engineering.",
-    "years": "October 2016 - February 2017",
-    "description": "PhD Student.",
-    "url": "https://www.researchgate.net/publication/336344419_Acoustic_behavior_of_porous_concrete_Characterization_by_experimental_and_inversion_methods"
+    "company": "Universidad de Coimbra (UC) - PT",
+    "title": "Doctorado en Ingeniería Civil",
+    "years": "2016 - 2020",
+    "description": "Tesis titulada “Estudio de la absorción acústica de materiales granulares y sistemas híbridos con estructuras resonantes” aprobada con Distinción y Alabanza.",
+    "url": ""
   },
+
   "professionalExperience3": {
-    "company": "University of Santa Maria - UFSM - Brazil.",
-    "title": "Department of Structures and Construction (DECC)",
-    "years": "January 2013 - February 2016",
-    "description": "Researcher.",
-    "url": "https://www.researchgate.net/publication/336344419_Acoustic_behavior_of_porous_concrete_Characterization_by_experimental_and_inversion_methods"
+    "company": "Universidad de Alicante - ES",
+    "title": "Short Term Scientific Mission (STSM) DENORMS",
+    "years": "2016 - 2020",
+    "description": "Misiones científicas en el ámbito del proyecto DENORMS sobre los siguientes temas: “Experimental evaluation and incorporation in equivalent fluid models of macroscopic parameters characterizing granular materials for noise control” and “Metaporous Concrete”.",
+    "url": "https://denorms.eu/stsm/successful-stsm/"
+  },
+
+  "professionalExperience4": {
+    "company": "Institute for Sustainability and Innovation in Structural Engineering (ISISE) - PT",
+    "title": "Becario de investigación",
+    "years": "2016 - 2020",
+    "description": "Becario de investigación en el proyecto “Desarrollo de Meta & Smart Materials”.",
+    "url": "https://www.isise.net"
+  },
+
+  "professionalExperience5": {
+    "company": "Universidad Federal de Santa Maria (UFSM) - BR",
+    "title": "Graduación en Ingeniería Acústica",
+    "years": "2010 - 2016",
+    "description": "Trabajo de Conclusión del Curso titulado “Caracterización de materiales de absorción para incrementar el rendimiento de atenuación acústica en cámaras de expansión”.",
+    "url": ""
   }
 }

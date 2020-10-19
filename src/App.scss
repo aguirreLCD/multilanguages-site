@@ -112,10 +112,6 @@ h2 {
   font-weight: bold;
 }
 
-// h3 {
-//   color: rgb(255, 0, 0);
-// }
-
 p {
   font-size: 0.8rem;
 }
@@ -175,12 +171,14 @@ header {
   padding: 0 3rem;
   display: flex;
   font-size: 0.9rem;
+
   @include responsive(tablet-portrait) {
     flex-direction: column;
     position: static;
     padding: 2rem;
     font-size: 0.8rem;
-    nav {
+    nav,
+    div#lang {
       margin: 1rem 0;
       font-size: 0.8rem;
     }
@@ -190,14 +188,16 @@ header {
     z-index: initial;
     flex-direction: column;
     position: static;
-    padding: 2rem;
+    padding: 1rem;
     font-size: 0.8rem;
-    nav {
-      margin: 1rem 0;
+    nav,
+    div#lang {
+      margin: 0.2rem 0;
       font-size: 0.8rem;
-      z-index: initial;
+      padding: 0;
     }
   }
+
   a {
     &::after {
       content: "";
@@ -218,12 +218,14 @@ header {
       }
     }
   }
+
   justify-content: space-between;
   align-items: center;
   text-transform: uppercase;
   z-index: 100;
   animation: slideDown 0.5s ease-in forwards;
   border-bottom: 1px solid rgba(#fff, 0.1);
+
   a.brand {
     color: #fff;
     padding: 1em 0;
@@ -234,22 +236,28 @@ header {
     display: flex;
     align-items: center;
     position: relative;
+
     span {
       color: $link-color;
     }
+
     @include responsive(tablet-portrait) {
       align-self: center;
     }
+
     @include responsive(phone) {
       z-index: -10000;
       align-self: center;
     }
   }
+
+  div#lang,
   nav {
     display: flex;
     align-self: stretch;
     flex-grow: 1;
     justify-content: flex-end;
+
     @include responsive(tablet-portrait) {
       justify-content: center;
     }
@@ -258,7 +266,8 @@ header {
       justify-content: center;
     }
 
-    a {
+    a,
+    div#lang {
       display: flex;
       align-items: center;
       padding: 0 1em;
@@ -271,12 +280,32 @@ header {
   div#lang {
     margin: 0 2em;
     color: #fff;
+    display: flex;
+    align-self: center;
+
+    // @include responsive(tablet-portrait) {
+    //   position: static;
+    // }
+    // @include responsive(phone) {
+    //   z-index: -10000;
+    //   position: static;
+    // }
+
     div.active {
       padding: 1em 2em;
       color: #999;
       display: flex;
       align-items: center;
       cursor: pointer;
+
+      // @include responsive(tablet-portrait) {
+      //   position: static;
+      // }
+      // @include responsive(phone) {
+      //   z-index: -10000;
+      //   position: static;
+      // }
+
       div.flags {
         align-self: flex-start;
         display: flex;
@@ -288,18 +317,43 @@ header {
         opacity: 0;
         transition: all 0.5s ease;
 
+        @include responsive(tablet-portrait) {
+          position: static;
+        }
+        @include responsive(phone) {
+          z-index: -10000;
+          position: static;
+          // align-items: stretch;
+          // justify-content: center;
+          flex-direction: row;
+          // align-self: center;
+          // align-content: center;
+          margin: 0;
+          padding: 0;
+        }
+
         button {
           cursor: pointer;
           color: #999;
-          padding: 1em 2em;
+          padding: 1em 1em;
           display: flex;
+          // flex-direction: row;
           align-items: center;
-          text-transform: uppercase;
+          // text-transform: uppercase;
           background: none;
           border: none;
           transition: color 0.25s ease-in;
+
           &:hover {
             color: #fff;
+
+            // @include responsive(tablet-portrait) {
+            //   position: static;
+            // }
+            // @include responsive(phone) {
+            //   z-index: -10000;
+            //   position: static;
+            // }
           }
         }
       }
@@ -307,11 +361,29 @@ header {
       &:hover {
         div.flags {
           opacity: 1;
+          // align-self: center;
         }
+
+        // @include responsive(tablet-portrait) {
+        //   position: static;
+        // }
+        // @include responsive(phone) {
+        //   z-index: -10000;
+        //   position: static;
+        // }
       }
       transition: all 0.5s ease-in;
       &.active {
         color: $link-color;
+        // align-self: center;
+
+        // @include responsive(tablet-portrait) {
+        //   position: static;
+        // }
+        // @include responsive(phone) {
+        //   z-index: -10000;
+        //   position: static;
+        // }
       }
       &::after {
         content: "";
@@ -328,22 +400,35 @@ header {
         cursor: pointer;
         animation: leftRight 1s ease-in infinite alternate;
         color: #fff;
+        // align-self: center;
+
+        // @include responsive(tablet-portrait) {
+        //   position: static;
+        // }
+        // @include responsive(phone) {
+        //   z-index: -10000;
+        //   position: static;
+        // }
       }
+
       img {
         width: 20px;
         height: 20px;
         margin-right: 1em;
+        align-self: center;
       }
       @include responsive(phone) {
         z-index: -10000;
         position: static;
+        // align-self: center;
+        margin-left: 2rem;
+        padding: 0;
+        // justify-content: center;
+        // align-items: center;
+        // align-content: center;
       }
     }
     @include responsive(tablet-portrait) {
-      position: static;
-    }
-    @include responsive(phone) {
-      z-index: -10000;
       position: static;
     }
   }
@@ -373,7 +458,7 @@ main {
     @include responsive(phone) {
       z-index: -10000;
       position: static;
-      padding: 1.5rem;
+      padding: 1rem;
 
       // min-height: 100vh;
     }
@@ -429,6 +514,10 @@ main {
         span {
           color: $link-color;
         }
+      }
+      @include responsive(phone) {
+        z-index: -10000;
+        position: static;
       }
       @include responsive(phone) {
         div,
