@@ -85,7 +85,7 @@ $bg-color: #37343f;
   font-family: Roboto;
   color: #fff;
   position: relative;
-  font-size: 1vmin;
+  font-size: 1rem;
   letter-spacing: 0.03rem;
   &.loaded::before {
     content: "";
@@ -172,7 +172,7 @@ header {
   top: 0;
   left: 0;
   right: 0;
-  padding: 0 4rem;
+  padding: 0 3rem;
   display: flex;
   font-size: 0.9rem;
   @include responsive(tablet-portrait) {
@@ -189,7 +189,7 @@ header {
   @include responsive(phone) {
     z-index: initial;
     flex-direction: column;
-    position: static;
+    // position: static;
     padding: 2rem;
     font-size: 0.8rem;
     nav {
