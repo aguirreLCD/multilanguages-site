@@ -33,7 +33,7 @@ export default (props) => {
         <div id="lang">
           <div className="active">
             <img src={active.img} alt="flag" />
-            {active.label}
+            {/* {active.label} */}
             <div className="flags">
               {flags.map((flag, index) => (
                 <button value={flag["code"]} key={index} onClick={handleChange}>

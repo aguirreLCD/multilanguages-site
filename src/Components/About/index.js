@@ -8,20 +8,17 @@ export default (props) => {
         <div>
           <div>
             {/* <h3>Matheus Pereira</h3> */}
-
             {/* <h2>{t("bioTitle")}</h2> */}
             {t("bioDescription")
               .split("/n")
               .map((text, i) => (
                 <p dangerouslySetInnerHTML={{ __html: text }} key={i}></p>
               ))}
-
             {t("bioDescriptionMore")
               .split("/n")
               .map((text, i) => (
                 <p dangerouslySetInnerHTML={{ __html: text }} key={i}></p>
               ))}
-
             <a
               className="btn btn-primary"
               target="_blank"
