@@ -2,7 +2,8 @@
 
 //MIXIN
 $media-types: (
-  phone: "(min-width: 360px) and (max-width: 480px)",
+  iphone: "(min-width: 320px) and (max-width: 359px)",
+  phone: "(min-width: 360px) and (max-width: 479px)",
   tablet-portrait: "(min-width: 480px) and (max-width: 767px)",
   tablet-landscape-desktop: "(min-width: 768px) and (max-width: 979px)",
   large-desktop: "(min-width: 1200px)",
@@ -178,16 +179,35 @@ header {
 
   @include responsive(phone) {
     z-index: -1;
-    flex-direction: column;
+    flex-direction: column-reverse;
     position: static;
-    padding: 0 0.3rem;
-    font-size: 0.8rem;
-    nav,
-    div#lang {
-      margin: 0;
-      font-size: 0.8rem;
-      padding: 0;
-    }
+    padding: 0 0.5rem;
+    font-size: 0.85rem;
+  }
+
+  @include responsive(iphone) {
+    padding: 0 1rem;
+
+    z-index: -1;
+    flex-direction: column-reverse;
+    position: static;
+    font-size: 0.7rem;
+  }
+
+  @include responsive(tablet-portrait) {
+    z-index: -1;
+    flex-direction: column-reverse;
+    position: static;
+    padding: 0 0.5rem;
+    font-size: 1rem;
+  }
+
+  @include responsive(tablet-landscape-desktop) {
+    z-index: -1;
+    flex-direction: column-reverse;
+    position: static;
+    padding: 1rem 1.5rem;
+    font-size: 1.3rem;
   }
 
   a {
@@ -233,13 +253,38 @@ header {
       color: $link-color;
     }
 
+    @include responsive(iphone) {
+      z-index: -1;
+      align-self: center;
+      flex-direction: row-reverse;
+      padding: 0.4rem 0;
+      margin: 0.6rem 0;
+    }
+
     @include responsive(phone) {
       z-index: -1;
       align-self: center;
-      padding: 1rem 0;
+
+      padding: 0.7rem 0;
       // margin-top: 0.2rem;
-      margin: 0;
+      margin: 0.6rem 0;
       line-height: 1rem;
+    }
+
+    @include responsive(tablet-portrait) {
+      z-index: -1;
+      align-self: center;
+      padding: 0.7rem 0;
+      margin: 0.6rem 0;
+      line-height: 1rem;
+    }
+
+    @include responsive(tablet-landscape-desktop) {
+      z-index: -1;
+      align-self: center;
+      font-size: 1.4rem;
+      padding: 0.8rem 0.8rem;
+      margin: 0.8rem 0.8rem;
     }
   }
 
@@ -247,8 +292,8 @@ header {
   nav {
     display: flex;
     align-self: stretch;
-    flex-grow: 1;
-    justify-content: flex-end;
+    // flex-grow: 1;
+    justify-content: space-between;
 
     a {
       display: flex;
@@ -260,16 +305,17 @@ header {
       transition: color 0.25s ease-in;
     }
 
-    @include responsive(phone) {
-      // position: relative;
-      padding: 0 1rem;
+    @include responsive(iphone) {
+      padding: 0.3rem 0.8rem;
       z-index: -1000;
-      line-height: 1rem;
-      // justify-content: center;
-
-      align-self: center;
-      // padding: 0;
-      // margin: 0;
+    }
+    @include responsive(phone) {
+      padding: 0.5rem 1rem;
+      z-index: -1000;
+    }
+    @include responsive(tablet-landscape-desktop) {
+      padding: 1rem 1rem;
+      z-index: -1000;
     }
   }
 
@@ -278,6 +324,14 @@ header {
     color: #fff;
     display: flex;
     align-self: center;
+    @include responsive(tablet-landscape-desktop) {
+      padding: 0.8rem 1rem;
+      top: 0.2rem;
+      border-radius: 1.5rem;
+      margin-bottom: 0.2rem;
+      border: none;
+      right: 0.3rem;
+    }
 
     div.active {
       padding: 1rem 2rem;
@@ -285,6 +339,23 @@ header {
       display: flex;
       align-items: center;
       cursor: pointer;
+      @include responsive(iphone) {
+        padding: 0.2rem 0.4rem;
+        top: 0.2rem;
+        border-radius: 1.5rem;
+        margin-bottom: 0.2rem;
+        border: none;
+        right: 0.3rem;
+      }
+
+      @include responsive(tablet-landscape-desktop) {
+        padding: 1rem 12rem;
+        // top: 0.1rem;
+        border-radius: 1.5rem;
+        margin-bottom: 0.2rem;
+        border: none;
+        right: 0.1rem;
+      }
 
       div.flags {
         align-self: flex-start;
@@ -296,19 +367,41 @@ header {
         border-radius: 1em;
         opacity: 0;
         transition: all 0.5s ease;
-
-        @include responsive(phone) {
-          // z-index: -1000;
+        @include responsive(tablet-landscape-desktop) {
           position: relative;
           flex-direction: row;
-          justify-content: space-between;
           align-items: center;
-          // align-items: flex-start;
-          // margin-bottom: 1rem;
-          padding: 0.1rem;
+          // padding: 0.5rem 0;
+          top: 0.2rem;
+          border-radius: 2rem;
+          border: none;
+          background-color: $bg-color;
+        }
+
+        @include responsive(phone) {
+          position: relative;
+          flex-direction: row;
+          align-items: center;
+          padding: 0.3rem 0;
           top: 0.3rem;
-          // right: 9rem;
-          // bottom: 1rem;
+          border-radius: 2rem;
+          margin-bottom: 0.3rem;
+          border: none;
+          right: 0.4rem;
+          background-color: $bg-color;
+        }
+
+        @include responsive(iphone) {
+          position: relative;
+          flex-direction: row;
+          align-items: center;
+          padding: 0.1rem 0.4rem;
+
+          top: 0.1rem;
+          // border-radius: 1.5rem;
+          margin-bottom: 0.2rem;
+          border: none;
+          right: 0.3rem;
           background-color: $bg-color;
         }
 
@@ -324,15 +417,42 @@ header {
 
           &:hover {
             color: #fff;
-          }
 
-          @include responsive(phone) {
-            // z-index: -1;
-            position: relative;
-            // top: .3rem;
-            // flex-direction: row;
-            // margin: 0.1rem 0;
-            padding: 0.5rem 0.5rem;
+            @include responsive(iphone) {
+              position: relative;
+              align-items: center;
+              border: none;
+              padding: 0.1rem 0.5rem;
+            }
+
+            @include responsive(phone) {
+              // z-index: -1;
+              position: relative;
+              align-items: center;
+              border: none;
+              // justify-content: space-evenly;
+              // top: 0.3rem;
+              // flex-direction: row;
+              // margin: 0.1rem 0;
+              padding: 0.1rem 0.5rem;
+            }
+            @include responsive(tablet-portrait) {
+              // z-index: -1;
+              position: relative;
+              align-items: center;
+              border: none;
+              // justify-content: space-evenly;
+              // top: 0.3rem;
+              // flex-direction: row;
+              // margin: 0.1rem 0;
+              padding: 0.5rem 1rem;
+            }
+            @include responsive(tablet-landscape-desktop) {
+              position: relative;
+              align-items: center;
+              border: none;
+              padding: 1rem 1.2rem;
+            }
           }
         }
       }
@@ -362,10 +482,32 @@ header {
         animation: leftRight 2s ease-in infinite alternate;
         color: #fff;
 
+        @include responsive(iphone) {
+          // left: 90%;
+          position: static;
+          margin: 0.1rem 0.8rem;
+          // padding: 0.1rem;
+          // top: 11%;
+        }
+
         @include responsive(phone) {
           // z-index: -1;
           // position: relative;
-          // left: 90%;
+          left: 95%;
+          // margin: 0 1rem;
+        }
+
+        @include responsive(tablet-portrait) {
+          // z-index: -1;
+          // position: relative;
+          left: 95%;
+          // margin: 0 1rem;
+        }
+
+        @include responsive(tablet-landscape-desktop) {
+          // z-index: -1;
+          // position: relative;
+          left: 90%;
           // margin: 0 1rem;
         }
       }
@@ -377,15 +519,48 @@ header {
         align-self: center;
         z-index: 1;
         overflow-x: hidden;
+
+        @include responsive(phone) {
+          width: 20px;
+          height: 20px;
+          margin-right: 1rem;
+          align-self: center;
+        }
+
+        @include responsive(tablet-portrait) {
+          width: 20px;
+          height: 20px;
+          margin-right: 1rem;
+          align-self: center;
+        }
+
+        @include responsive(tablet-landscape-desktop) {
+          width: 30px;
+          height: 30px;
+          margin-right: 3rem;
+          align-self: center;
+          overflow-x: hidden;
+        }
       }
+
       @include responsive(phone) {
         // z-index: -1;
 
         position: relative;
 
         // bottom: 110vh;
-        margin-left: 1rem;
+        // margin-left: 1rem;
         padding: 0.5rem 0;
+      }
+
+      @include responsive(tablet-portrait) {
+        position: relative;
+        padding: 0.5rem 0;
+      }
+
+      @include responsive(tablet-landscape-desktop) {
+        position: relative;
+        padding: 0 3rem;
       }
     }
   }
@@ -408,7 +583,13 @@ main {
     transition-timing-function: ease-in;
     padding: 15vh 10vw;
     overflow-y: auto;
+    @include responsive(iphone) {
+      z-index: -1000;
+      position: static;
+      padding: 0.4rem;
+    }
     @include responsive(tablet-portrait) {
+      z-index: -1000;
       position: static;
       padding: 1.2rem;
     }
@@ -416,6 +597,12 @@ main {
       z-index: -1000;
       position: static;
       padding: 0.5rem;
+    }
+
+    @include responsive(tablet-landscape-desktop) {
+      z-index: -1000;
+      position: static;
+      padding: 0.1rem;
     }
 
     &[class^="fade"] {
@@ -477,6 +664,23 @@ main {
         }
       }
 
+      @include responsive(iphone) {
+        z-index: -10000;
+        position: static;
+
+        div,
+        h2,
+        p {
+          width: 90%;
+        }
+        h2 {
+          font-size: 1.8rem;
+        }
+        h3 {
+          font-size: 1.2rem;
+        }
+      }
+
       @include responsive(phone) {
         z-index: -10000;
         position: static;
@@ -491,6 +695,44 @@ main {
         }
         h3 {
           font-size: 1.4rem;
+        }
+      }
+
+      @include responsive(tablet-portrait) {
+        z-index: -10000;
+        position: static;
+
+        div,
+        h2,
+        p {
+          width: 90%;
+        }
+        h2 {
+          font-size: 2.5rem;
+        }
+        h3 {
+          font-size: 1.4rem;
+        }
+      }
+
+      @include responsive(tablet-landscape-desktop) {
+        z-index: -10000;
+        position: static;
+
+        div,
+        h2,
+        p {
+          width: 100%;
+        }
+        h2 {
+          font-size: 3rem;
+        }
+        h3 {
+          font-size: 2.6rem;
+        }
+
+        p {
+          font-size: 2rem;
         }
       }
     }
@@ -508,13 +750,21 @@ main {
           grid-template-columns: 1fr;
         }
 
+        @include responsive(iphone) {
+          z-index: -10000;
+          grid-template-columns: 1fr;
+        }
+
         @include responsive(phone) {
           z-index: -10000;
           grid-template-columns: 1fr;
         }
 
         @include responsive(tablet-landscape-desktop) {
+          // z-index: -10000;
+          margin: 1rem 1.5rem;
           grid-template-columns: 1fr 1fr;
+          grid-gap: 1rem;
         }
 
         li {
@@ -572,6 +822,24 @@ main {
         }
       }
 
+      @include responsive(iphone) {
+        > div {
+          > h2,
+          > p {
+            z-index: -10000;
+            text-align: left;
+          }
+          h2 {
+            font-size: 2rem;
+            text-align: center;
+          }
+          > p {
+            z-index: -10000;
+            width: 100%;
+          }
+        }
+      }
+
       @include responsive(phone) {
         > div {
           > h2,
@@ -581,6 +849,24 @@ main {
           }
           h2 {
             font-size: 2.5rem;
+            text-align: center;
+          }
+          > p {
+            z-index: -10000;
+            width: 100%;
+          }
+        }
+      }
+
+      @include responsive(tablet-landscape-desktop) {
+        > div {
+          > h2,
+          > p {
+            z-index: -10000;
+            text-align: left;
+          }
+          h2 {
+            font-size: 2.8rem;
             text-align: center;
           }
           > p {
@@ -621,6 +907,93 @@ main {
           }
         }
 
+        @include responsive(iphone) {
+          grid-template-columns: 1fr;
+
+          > div {
+            > h2,
+            > p {
+              text-align: left;
+            }
+
+            p {
+              padding: 0.1rem;
+              margin: 0.2rem;
+            }
+          }
+
+          figure {
+            grid-row: 1;
+            margin: 0;
+            padding: 0;
+            img {
+              display: block;
+              margin: 0 auto;
+              width: 65%;
+              height: 250px;
+              object-position: top;
+            }
+          }
+        }
+
+        @include responsive(tablet-portrait) {
+          grid-template-columns: 1fr;
+
+          > div {
+            > h2,
+            > p {
+              text-align: left;
+            }
+
+            p {
+              padding: 0.1rem;
+              margin: 0.2rem;
+            }
+          }
+
+          figure {
+            grid-row: 1;
+            margin: 0;
+            padding: 0;
+            img {
+              display: block;
+              margin: 0 auto;
+              width: 65%;
+              height: 250px;
+              object-position: top;
+            }
+          }
+        }
+
+        @include responsive(tablet-landscape-desktop) {
+          grid-template-columns: 1fr;
+
+          > div {
+            > h2,
+            > p {
+              text-align: left;
+            }
+
+            p {
+              padding: 0.1rem;
+              margin: 0.2rem;
+            }
+          }
+
+          figure {
+            grid-row: 1;
+            margin: 0;
+            padding: 0;
+            img {
+              display: block;
+              margin: 0 auto;
+              width: 65%;
+              height: 250px;
+              object-position: top;
+            }
+          }
+        }
+
         @include responsive(phone) {
           grid-template-columns: 1fr;
 
@@ -656,15 +1029,15 @@ main {
 
 footer {
   background: rgb(194, 193, 193);
-  position: fixed;
+  position: absolute;
   bottom: 0;
   top: 90vh;
   left: 0;
   right: 0;
   display: flex;
   justify-content: space-around;
-  padding: 0.5rem 1rem;
-  color: $bg-color;
+  // padding: 0.5rem 1rem;
+  // color: $bg-color;
   font-size: 2rem;
 
   a {
@@ -705,27 +1078,41 @@ footer {
     color: rgb(10, 10, 10);
     padding: 5px;
   }
-  @include responsive(tablet-portrait) {
-    position: static;
-    display: flex;
+
+  @include responsive(iphone) {
+    z-index: -1;
+    position: revert;
+    padding: 1.3rem;
     justify-content: space-around;
-    font-size: 1.5rem;
-    ul {
-      margin-bottom: 1rem;
-    }
+    font-size: 1.2rem;
+  }
+
+  @include responsive(tablet-portrait) {
+    z-index: -1;
+    position: revert;
+    padding: 1.3rem;
+    justify-content: space-around;
+    font-size: 1.2rem;
+  }
+
+  @include responsive(tablet-landscape-desktop) {
+    z-index: -1;
+    position: revert;
+    padding: 1.5rem;
+    justify-content: space-around;
+    font-size: 1.6rem;
   }
 
   @include responsive(phone) {
-    position: static;
-    padding: 0.4rem;
-
-    display: flex;
+    z-index: -1;
+    position: revert;
+    padding: 1.3rem;
     justify-content: space-around;
     font-size: 1.5rem;
     ul {
-      z-index: initial;
+      // z-index: -1;
 
-      position: static;
+      // position: static;
     }
   }
 }
