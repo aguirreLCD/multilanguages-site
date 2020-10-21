@@ -176,23 +176,11 @@ header {
   display: flex;
   font-size: 1rem;
 
-  @include responsive(tablet-portrait) {
-    flex-direction: column;
-    position: static;
-    padding: 2rem;
-    font-size: 0.8rem;
-    nav,
-    div#lang {
-      margin: 1rem 0;
-      font-size: 0.8rem;
-    }
-  }
-
   @include responsive(phone) {
     z-index: -1;
     flex-direction: column;
     position: static;
-    padding: 1.5rem;
+    padding: 0 0.3rem;
     font-size: 0.8rem;
     nav,
     div#lang {
@@ -245,68 +233,54 @@ header {
       color: $link-color;
     }
 
-    @include responsive(tablet-portrait) {
-      align-self: center;
-    }
-
     @include responsive(phone) {
       z-index: -1;
       align-self: center;
       padding: 1rem 0;
-      margin-top: 0.2rem;
+      // margin-top: 0.2rem;
+      margin: 0;
+      line-height: 1rem;
     }
   }
 
-  div#lang,
+  // div#lang,
   nav {
     display: flex;
     align-self: stretch;
     flex-grow: 1;
     justify-content: flex-end;
 
-    @include responsive(tablet-portrait) {
-      justify-content: center;
-    }
-    @include responsive(phone) {
-      z-index: -1000;
-      justify-content: center;
-
-      display: flex;
-      align-self: center;
-      padding: 0;
-      margin: 0;
-    }
-
-    a,
-    div#lang {
+    a {
       display: flex;
       align-items: center;
-      padding: 0 0.8em;
+      padding: 0 0.6em;
       color: #fff;
-      line-height: 0.6rem;
+      line-height: 0.5rem;
       position: relative;
       transition: color 0.25s ease-in;
     }
 
     @include responsive(phone) {
+      // position: relative;
+      padding: 0 1rem;
       z-index: -1000;
-      justify-content: center;
+      line-height: 1rem;
+      // justify-content: center;
 
-      display: flex;
       align-self: center;
-      padding: 0;
-      margin: 0;
+      // padding: 0;
+      // margin: 0;
     }
   }
 
   div#lang {
-    margin: 0 2em;
+    margin: 0 2rem;
     color: #fff;
     display: flex;
     align-self: center;
 
     div.active {
-      padding: 1em 2em;
+      padding: 1rem 2rem;
       color: #999;
       display: flex;
       align-items: center;
@@ -323,18 +297,18 @@ header {
         opacity: 0;
         transition: all 0.5s ease;
 
-        @include responsive(tablet-portrait) {
-          z-index: -10000;
-
-          position: static;
-        }
-
         @include responsive(phone) {
-          z-index: -1000;
-          position: static;
+          // z-index: -1000;
+          position: relative;
           flex-direction: row;
-          margin-bottom: 0.4rem;
-          padding: 0;
+          justify-content: space-between;
+          align-items: center;
+          // align-items: flex-start;
+          // margin-bottom: 1rem;
+          padding: 0.1rem;
+          top: 0.3rem;
+          // right: 9rem;
+          // bottom: 1rem;
           background-color: $bg-color;
         }
 
@@ -353,10 +327,12 @@ header {
           }
 
           @include responsive(phone) {
+            // z-index: -1;
             position: relative;
-            flex-direction: row;
-            margin: 0.1rem;
-            padding: 0.2rem;
+            // top: .3rem;
+            // flex-direction: row;
+            // margin: 0.1rem 0;
+            padding: 0.5rem 0.5rem;
           }
         }
       }
@@ -387,7 +363,10 @@ header {
         color: #fff;
 
         @include responsive(phone) {
-          position: static;
+          // z-index: -1;
+          // position: relative;
+          // left: 90%;
+          // margin: 0 1rem;
         }
       }
 
@@ -400,19 +379,13 @@ header {
         overflow-x: hidden;
       }
       @include responsive(phone) {
-        z-index: -1;
+        // z-index: -1;
 
-        position: absolute;
-        bottom: 111vh;
-        margin-left: 1rem;
-        padding: 0.2rem;
-      }
-      @include responsive(tablet-portrait) {
-        z-index: -1;
-        margin-left: 1rem;
-        padding: 0.25rem;
+        position: relative;
 
-        position: static;
+        // bottom: 110vh;
+        margin-left: 1rem;
+        padding: 0.5rem 0;
       }
     }
   }
